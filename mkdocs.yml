@@ -44,8 +44,6 @@ theme:
 plugins:
   - search:
       lang: zh
-  - minify:
-      minify_html: true
 
 # 扩展
 markdown_extensions:
@@ -72,6 +70,7 @@ nav:
   - 首页: index.md
   - 个人修炼:
     - 个人化修炼方案: 个人修炼/个人化修炼方案_43岁上班族.md
+    - 百日筑基学习框架: 个人修炼/金丹大道_百日筑基学习框架.md
     - 修炼日记模板: 个人修炼/修炼日记模板.md
   - 太乙金华宗旨:
     - 目录: 太乙金华宗旨/00_目录.md
