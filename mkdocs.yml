@@ -1,0 +1,125 @@
+# MkDocs 配置文件
+# 用于生成丹道修炼资料库静态网站
+
+site_name: 丹道修炼资料库
+site_description: 系统学习金丹大道，从百日筑基开始
+site_author: 修行者
+site_url: https://yourusername.github.io/dandao-docs
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  palette:
+    # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+# 插件
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+
+# 扩展
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+# 导航菜单
+nav:
+  - 首页: index.md
+  - 个人修炼:
+    - 个人化修炼方案: 个人修炼/个人化修炼方案_43岁上班族.md
+    - 修炼日记模板: 个人修炼/修炼日记模板.md
+  - 太乙金华宗旨:
+    - 目录: 太乙金华宗旨/00_目录.md
+    - 一、典籍简介: 太乙金华宗旨/01_典籍简介.md
+    - 二、成书背景: 太乙金华宗旨/02_成书背景.md
+    - 三、章节结构: 太乙金华宗旨/03_章节结构.md
+    - 四、核心理论: 太乙金华宗旨/04_核心理论.md
+    - 五、与灵宝毕法关系: 太乙金华宗旨/05_与灵宝毕法关系.md
+    - 第一章 天心: 太乙金华宗旨/06_第一章_天心.md
+    - 第二章 元神识神: 太乙金华宗旨/07_第二章_元神识神.md
+    - 第三章 回光之功: 太乙金华宗旨/08_第三章_回光之功.md
+    - 第四章 回光证验: 太乙金华宗旨/09_第四章_回光证验.md
+    - 第五章 回光差别: 太乙金华宗旨/10_第五章_回光差别.md
+    - 第六章 性根命蒂: 太乙金华宗旨/11_第六章_性根命蒂.md
+    - 第七章 臾安岛: 太乙金华宗旨/12_第七章_臾安岛.md
+    - 第八章 逍遥诀: 太乙金华宗旨/13_第八章_逍遥诀.md
+    - 第九章 待诏之气: 太乙金华宗旨/14_第九章_待诏之气.md
+    - 第十章 杂谈: 太乙金华宗旨/15_第十章_杂谈.md
+    - 第十一章 坎离交媾: 太乙金华宗旨/16_第十一章_坎离交媾.md
+    - 第十二章 周天: 太乙金华宗旨/17_第十二章_周天.md
+    - 第十三章 劝世歌: 太乙金华宗旨/18_第十三章_劝世歌.md
+    - 附录一 历代注释: 太乙金华宗旨/19_附录一_历代注释.md
+    - 附录二 荣格解读: 太乙金华宗旨/20_附录二_荣格金花的秘密.md
+    - 附录三 修炼指南: 太乙金华宗旨/21_附录三_修炼指南汇总.md
+    - 附录四 疑难解答: 太乙金华宗旨/22_附录四_疑难解答.md
+  - 灵宝毕法:
+    - 上卷 小乘安乐延年法:
+      - 百日筑基实修手册: 灵宝毕法/上卷/百日筑基_实修跟练手册.md
+      - 第一门 匹配阴阳: 灵宝毕法/上卷/第一门_匹配阴阳_详解.md
+      - 第二门 聚散水火: 灵宝毕法/上卷/第二门_聚散水火_详解.md
+      - 第三门 交媾龙虎: 灵宝毕法/上卷/第三门_交媾龙虎_详解.md
+      - 第四门 烧炼丹药: 灵宝毕法/上卷/第四门_烧炼丹药_详解.md
+    - 中卷 长生不死法:
+      - 中卷详解: 灵宝毕法/中卷/灵宝毕法_中卷_长生不死法_详解.md
+    - 下卷 超凡入圣法:
+      - 下卷详解: 灵宝毕法/下卷/灵宝毕法_下卷_大乘超凡入圣法_详解.md
+  - 参考资料:
+    - 大成捷要: 参考资料/大成捷要_丹道典籍详解.md
+    - 道教源流谱: 参考资料/道教源流谱_完整版.md
+    - 丹道修炼发展脉络: 参考资料/丹道修炼发展脉络与流派详解.md
+
+# 版权信息
+copyright: Copyright &copy; 2026 丹道修炼资料库
+
+# 额外配置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/dandao-docs
+  version:
+    provider: mike
